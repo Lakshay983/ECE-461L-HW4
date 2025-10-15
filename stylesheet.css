@@ -1,0 +1,90 @@
+/* Tag selector requirement: style an HTML tag */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.5;
+  margin: 0;               /* box model property (1) */
+  padding: 0;              /* box model property (2) */
+  background: linear-gradient(180deg,#f7fbff,#ffffff);
+  color: #111827;
+}
+
+/* id requirement: style a unique element */
+#site-header {
+  padding: 1.4rem;         /* box model property (3) */
+  border-bottom: 2px solid rgba(17,24,39,0.06);
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* class requirement: used on multiple elements */
+.brand {
+  font-size: 1.6rem;
+  margin: 0;
+}
+.tagline {
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Use same class on at least two elements */
+.section {
+  padding: 1.2rem;         /* box model property (4) */
+  margin: 1rem auto;
+  width: min(1000px, 94%);
+}
+
+/* content-card class applied to multiple sections (class used >1) */
+.content-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(16,24,40,0.04);
+  padding: 1rem;
+}
+
+/* Change <a> hover color requirement */
+a {
+  color: #0b61ff;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(11,97,255,0.15);
+}
+a:hover {
+  color: #0047b3; /* hover color change */
+  border-bottom-style: solid;
+}
+
+/* hover for nav links specifically */
+.nav-link:hover {
+  color: #0b61ff;
+  text-decoration: underline;
+}
+
+/* Styling images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin-top: 0.6rem;
+}
+
+/* Project list and reuse of class */
+.project-list { display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); }
+.project { padding: 0.8rem; border-radius: 6px; background: #fbfdff; border: 1px solid rgba(11,97,255,0.06); }
+.project-title { margin: 0 0 0.4rem 0; }
+
+/* project-link as a reused class on links */
+.project-link { display:inline-block; margin-top:0.5rem; }
+
+/* footer */
+#site-footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: rgba(17,24,39,0.7);
+}
+
+/* small responsive tweak using a tag selector (h2) */
+h2 { font-size: 1.2rem; margin-top: 0; }
+
+/* end of stylesheet */
